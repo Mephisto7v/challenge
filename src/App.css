@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F5F9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imgPart {
+  position: relative;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heroImg {
+  width: 100%;
+  border-radius: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.overlayImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.cardComponent {
+  width: 25%;
+  border-radius: 5%;
+  background-color: #FFFFFF;
+}
+
+.textContainer{
+  margin: 0 8% 5% 8%;
+}
+
+.text{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #677489;
+
+}
+
+.title{
+  font-family: 'Poppins', sans-serif;
+  color: #111729;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.avatarImg{
+  width: 10%;
+  height: 10%;
+  border:3px solid #F2F5F9;
+  border-radius: 50%;
+}
+
+.avatarContainer{
+  border-top: 3px solid #F2F5F9;
+  display: flex;
+  align-items: center;
+  padding: 5% 8%;
+}
+
+.name{
+  font-family: 'Poppins', sans-serif;
+  color: #111729;
+  font-size: 16px;
+}
+
+.job{
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: #677489;
+  font-weight: 700;
+}
+
+.textAvatarContainer{
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
